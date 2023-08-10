@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional styles for animations */
+        .report-card {
+            background-color: #dce3cd;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .report-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <style>
+        /* Additional styles for animations */
+        .feature-card {
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <style>
+        /* Additional styles for animations */
+        .animate-up {
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .animate-up.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .colored-bg {
+            background-color: #6692bd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">FaceRecSys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestion.html">Suggestions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 animate-up show">Face Recognition System Project</h1>
+            <p class="lead animate-up show">Efficiently manage attendance with cutting-edge face recognition technology.</p>
+            <a href="#about" class=" animate-up show">Learn More</a>
+        </div>
+    </section>
+    
+    <section id="about" class="py-5 colored-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 animate-up show">
+                    <h2 class="display-4">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at libero eget ex cursus accumsan vitae ac risus.</p>
+                    <p>Our team is dedicated to creating innovative solutions using cutting-edge face recognition technology to streamline attendance management and enhance security.</p>
+                </div>
+                <div class="col-lg-6 animate-up show">
+                    <img src="https://cdn.dribbble.com/users/3496409/screenshots/7749099/scanner.gif" alt="About Image" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate-up show">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature-card">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="https://i.pinimg.com/originals/98/83/48/988348f47aabd1c4b266615982204c4a.gif" alt="About Image" class="img-fluid rounded-circle">
+                            <br><br><h5 class="card-title">Face Recognition</h5>
+                            <p class="card-text">Efficiently identify and verify individuals through advanced face recognition technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="https://th.bing.com/th/id/R.1bc82a6d4f34d737b213681fe877aff9?rik=LNFPnTUOT26%2fLA&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f10%2fchecklist-gif-7.gif&ehk=DRTzCOLOPuyK8o%2baS5loY%2f3S%2fFGRvgkrlpFjOz5Fsec%3d&risl=&pid=ImgRaw&r=0" alt="About Image" class="img-fluid rounded-circle">
+                            <h5 class="card-title">Automated Attendance</h5>
+                            <p class="card-text">Automate attendance tracking and reporting, reducing administrative overhead.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/avento.gif" alt="About Image" class="img-fluid rounded-circle">
+                            <br><br><br><h5 class="card-title">Real-time Alerts</h5>
+                            <p class="card-text">Receive instant alerts for unauthorized access attempts or suspicious activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reports" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Project Reports</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Report 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="report1.pdf" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Report 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="report2.pdf" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Report 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="report3.pdf" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Report 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="report4.pdf" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Report 5</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="report5.pdf" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 colored-bg">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 animate-up show">Get in Touch</h2>
+                    <p class="lead animate-up show">We'd love to hear from you! Feel free to contact us for any inquiries or suggestions.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 mx-auto">
+                    <form>
+                        <div class="form-group animate-up show">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group animate-up show">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group animate-up show">
+                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block animate-up show">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2023 FaceRecSys</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Activate animations when the element is in the viewport
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-up');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('show');
+                }
+            });
+        }
+
+        function isElementInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        document.addEventListener('scroll', animateOnScroll);
+        animateOnScroll();
+    </script>
+</body>
+</html>
