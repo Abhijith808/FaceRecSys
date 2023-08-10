@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Recognition System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Additional styles for animations */
@@ -15,6 +16,20 @@
 
         .report-card:hover {
             transform: scale(1.05);
+        }
+        
+        .poster-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .seminar-poster {
+            max-width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .seminar-poster:hover {
+            transform: scale(1.1);
         }
     </style>
     <style>
@@ -42,7 +57,7 @@
         }
 
         .colored-bg {
-            background-color: #6692bd;
+            background-color: #ddf8da;
         }
     </style>
 </head>
@@ -62,10 +77,16 @@
                         <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reports">Reports</a>
+                        <a class="nav-link" href="#reports">ProjectReports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="suggestion.html">Suggestions</a>
+                        <a class="nav-link" href="#seminar">Seminar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://nsspolytechnic.ac.in/">College</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soon.html">Suggestions</a>
                     </li>
                 </ul>
             </div>
@@ -74,9 +95,8 @@
     
     <section id="hero" class="hero">
         <div class="container text-center">
-            <h1 class="display-4 animate-up show">Face Recognition System Project</h1>
+            <h1 class="display-4 animate-up show">Face Recognition Attendance System Project</h1>
             <p class="lead animate-up show">Efficiently manage attendance with cutting-edge face recognition technology.</p>
-            <a href="#about" class=" animate-up show">Learn More</a>
         </div>
     </section>
     
@@ -85,9 +105,67 @@
             <div class="row">
                 <div class="col-lg-6 animate-up show">
                     <h2 class="display-4">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at libero eget ex cursus accumsan vitae ac risus.</p>
-                    <p>Our team is dedicated to creating innovative solutions using cutting-edge face recognition technology to streamline attendance management and enhance security.</p>
-                </div>
+<p>We are a passionate team of five final year computer engineering students from NSS Polytechnic College, Pandalam. Our collective enthusiasm for technology and innovation has driven us to embark on a remarkable journey – the development of a Human Face Recognition Attendance System as our final year project.</p>
+
+
+
+Apologies for the confusion. I understand your requirement now. Here's the updated code that places the LinkedIn icon and the name below the profile photo, all in the same line:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 20px;">
+    <div style="text-align: center;">
+        <img src="abhijith.jpeg" alt="Abhijith S" height="80" class="img-fluid rounded-circle" width="80">
+        <a href="https://www.linkedin.com/in/abhijiths808/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <p>Abhijith S</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="abin.jpg" alt="Abin J" height="90" class="img-fluid rounded-circle" width="90">
+        <a href="https://www.linkedin.com/in/abin-j-60123b251" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <p>Abin J</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="ashish.jpg" alt="Ashish A Kurup" height="100" class="img-fluid rounded-circle" width="110">
+        <a href="https://www.linkedin.com/in/ashishakurup" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a><p>Ashish A Kurup</p>
+        
+    </div>
+    <div style="text-align: center;">
+        <img src="arjun.jpg" alt="Arjun A" height="90" class="img-fluid rounded-circle" width="90">
+        <a href="https://www.linkedin.com/in/arjun-a-53701627a" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a><p>Arjun A</p>
+       
+    </div>
+    <div style="text-align: center;">
+        <img src="saneesh.jpg" alt="Saneesh S" height="90" class="img-fluid rounded-circle" width="90">
+        <a href="https://www.linkedin.com/in/abin-linkedin-profile/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a><p>Saneesh S</p>
+        
+    </div>
+</div>
+
+<div id="moreContent" style="display: none;">
+    <p>Through countless hours of research, coding, testing, and refining, we are proud to present an innovative solution that addresses a practical challenge faced by educational institutions. We are excited to contribute to the world of technology and make a positive impact.</p>
+    <p>Thank you for joining us on this exciting journey towards a more efficient and secure future.</p>
+</div>
+
+<button id="readMoreButton" class="btn btn-light" data-toggle="collapse" data-target="#moreContent">Read More</button>
+</div>
                 <div class="col-lg-6 animate-up show">
                     <img src="https://cdn.dribbble.com/users/3496409/screenshots/7749099/scanner.gif" alt="About Image" class="img-fluid rounded-circle">
                 </div>
@@ -132,58 +210,191 @@
 
     <section id="reports" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Project Reports</h2>
+            <h2 class="text-center mb-4">Project Updates</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 report-card">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
                         <div class="card-body">
-                            <h5 class="card-title">Report 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="report1.pdf" class="btn btn-primary">View Report</a>
+                            <h5 class="card-title">Phase One</h5><br>
+                            <!-- <p class="card-text">The Face Recognition Attendance System utilizes cutting-edge facial recognition technology to automate and streamline attendance management processes with enhanced accuracy and security.</p> -->
+                            <a href="https://www.canva.com/design/DAFrBy10gac/IsraG1VfHc96fwNpDMQ7IA/view?utm_content=DAFrBy10gac&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">View Report</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 report-card">
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
                         <div class="card-body">
-                            <h5 class="card-title">Report 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="report2.pdf" class="btn btn-primary">View Report</a>
+                            <h5 class="card-title">Phase Two</h5>
+                           <br> <a href="soon.html" class="btn btn-primary">View Report</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 report-card">
+                <!--<div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
                         <div class="card-body">
-                            <h5 class="card-title">Report 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="report3.pdf" class="btn btn-primary">View Report</a>
+                            <h5 class="card-title">Face Recognition Database</h5>
+                            <p class="card-text">Face recognition database is a collection of facial images and associated data used to train and develop algorithms for automatically identifying individuals based on their unique facial features</p>
+                            <br><a href="soon.html" class="btn btn-primary">View Report</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 report-card">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
                         <div class="card-body">
-                            <h5 class="card-title">Report 4</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="report4.pdf" class="btn btn-primary">View Report</a>
+                            <h5 class="card-title">3D Face Recognition</h5>
+                            <p class="card-text">3D Face Recognition is an advanced technology that employs deep learning algorithms to accurately identify and analyze human faces in images and videos.</p>
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 report-card">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
                         <div class="card-body">
-                            <h5 class="card-title">Report 5</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="report5.pdf" class="btn btn-primary">View Report</a>
+                            <h5 class="card-title">Role of AI in SE</h5>
+                            <p class="card-text">The role of AI in Software Engineering involves automating tasks, enhancing decision-making, and optimizing processes through intelligent algorithms and data analysis.</p>
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>    
+
+
+    <section id="reports" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Project Reports</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition Attendance System</h5>
+                            <!-- <p class="card-text">The Face Recognition Attendance System utilizes cutting-edge facial recognition technology to automate and streamline attendance management processes with enhanced accuracy and security.</p> -->
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition algorithm</h5>
+                            <!-- <p class="card-text">Face recognition algorithm is a computational method that analyzes and compares facial features to uniquely identify individuals based on their facial characteristics.</p> -->
+                           <br> <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition Database</h5>
+                            <!-- <p class="card-text">Face recognition database is a collection of facial images and associated data used to train and develop algorithms for automatically identifying individuals based on their unique facial features</p> -->
+                            <br><a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">3D Face Recognition</h5>
+                            <!-- <p class="card-text">3D Face Recognition is an advanced technology that employs deep learning algorithms to accurately identify and analyze human faces in images and videos.</p> -->
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Role of AI in SE</h5>
+                            <!-- <p class="card-text">The role of AI in Software Engineering involves automating tasks, enhancing decision-making, and optimizing processes through intelligent algorithms and data analysis.</p> -->
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>    
+
+    
+    <section id="seminar" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Seminar: Human Face Recognition Attendance System</h2><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="poster-container">
+                        <img src="seminar.jpg" alt="Seminar Poster" class="img-fluid mb-4 seminar-poster">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Join us for an enlightening seminar on the innovative topic of Human Face Recognition Attendance System. In this seminar, we will delve into the realm of advanced facial recognition technology and its transformative impact on attendance management.</p>
+                    <p>Explore how facial recognition algorithms, powered by artificial intelligence, are revolutionizing traditional attendance methods. Learn how this technology enhances security, accuracy, and efficiency in various environments, from educational institutions to corporate settings.</p>
+                    <p>Our expert speakers will share insights into the underlying principles of face recognition, its applications, and the challenges and opportunities it presents. Whether you're a student, educator, technologist, or simply curious about the latest technological advancements, this seminar is designed to broaden your understanding of the future of attendance management.</p>
+                    <p>Don't miss this opportunity to engage with experts in the field, network with fellow attendees, and gain a deeper insight into the incredible potential of Human Face Recognition Attendance System.</p>
+                    <p>Date: 14 AUG 2023</p>
+                    <p>Time: 2:00 PM</p>
+                    <p>Location: NSS POLYTECHNIC COLLEGE,PANDALAM</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="reports" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Seminar Reports</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition Attendance System</h5>
+                            <p class="card-text">The Face Recognition Attendance System utilizes cutting-edge facial recognition technology to automate and streamline attendance management processes with enhanced accuracy and security.</p>
+                            <a href="https://www.canva.com/design/DAFqTKUt6Wc/2OfhJWQhSLjfGcMYV_4Ysg/view?utm_content=DAFqTKUt6Wc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition algorithm</h5>
+                            <p class="card-text">Face recognition algorithm is a computational method that analyzes and compares facial features to uniquely identify individuals based on their facial characteristics.</p>
+                           <br> <a href="https://www.canva.com/design/DAFp4xYQzkM/9FAgbT5tqnL7r2G9cOUJ4A/view?utm_content=DAFp4xYQzkM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition Database</h5>
+                            <p class="card-text">Face recognition database is a collection of facial images and associated data used to train and develop algorithms for automatically identifying individuals based on their unique facial features</p>
+                            <br><a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">3D Face Recognition</h5>
+                            <p class="card-text">3D Face Recognition is an advanced technology that employs deep learning algorithms to accurately identify and analyze human faces in images and videos.</p>
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 report-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Role of AI in SE</h5>
+                            <p class="card-text">The role of AI in Software Engineering involves automating tasks, enhancing decision-making, and optimizing processes through intelligent algorithms and data analysis.</p>
+                            <a href="soon.html" class="btn btn-primary">View Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <section id="contact" class="py-5 colored-bg">
         <div class="container text-center">
@@ -215,6 +426,8 @@
 
     <footer class="footer bg-dark text-white text-center py-3">
         <p>&copy; 2023 FaceRecSys</p>
+        <p>Read more about our college: <a href="https://nsspolytechnic.ac.in/" target="_blank">NSS Polytechnic College Pandalam</a></p>
+
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -244,5 +457,21 @@
         document.addEventListener('scroll', animateOnScroll);
         animateOnScroll();
     </script>
+    <script>
+        document.getElementById("readMoreButton").addEventListener("click", function() {
+            var moreContent = document.getElementById("moreContent");
+            var button = document.getElementById("readMoreButton");
+    
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                button.innerHTML = "Read Less";
+            } else {
+                moreContent.style.display = "none";
+                button.innerHTML = "Read More";
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
 </body>
 </html>
